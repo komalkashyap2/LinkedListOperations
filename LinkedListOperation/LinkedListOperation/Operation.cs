@@ -102,7 +102,8 @@ namespace LinkedListOperation
         }
         //Deleting first element
         //Deleting the first node
-        public Node pop()
+         
+        public Node PopFirst()
         {
             if (this.head == null)
             {
@@ -112,11 +113,12 @@ namespace LinkedListOperation
             return this.head;
         }
 
+
         //Display the nodes
         public void Show()
         {
             Console.WriteLine("**********Showing the Nodes************");
-            Console.WriteLine("/n");
+            
             Node temp = this.head;
             if (temp == null)
             {
