@@ -30,6 +30,13 @@ namespace LinkedListOperation
              obj.Append(56);
              obj.Append(30);
              obj.Append(70);
+
+            //Insertion Operation
+             obj.AddElement(56);
+             obj.AddBetween(2, 30);
+             obj.AddElement(70);
+
+            //Display Operation
             obj.Show();
 
             ;
