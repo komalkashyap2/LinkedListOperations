@@ -78,7 +78,7 @@ namespace LinkedListOperation
                     obj.DeleteInBetween(40);
                     obj.Show();
                     break;
-                 case 9:
+                case 9:
                     obj.AddElement(56);
                     obj.AddElement(30);
                     obj.AddElement(40);
