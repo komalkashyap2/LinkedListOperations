@@ -16,6 +16,7 @@ namespace LinkedListOperation
             Console.WriteLine("**********3.Inserting in between***********");
             Console.WriteLine("**********4.Pop the First Element***********");
             Console.WriteLine("**********5.Delete the Last Element***********");
+            Console.WriteLine("**********6.Searching the Element***********");
 
             Console.WriteLine("Enter the option!!!");
             int num = Convert.ToInt32(Console.ReadLine());
@@ -54,6 +55,12 @@ namespace LinkedListOperation
                     obj.AddElement(70);
                     obj.PopLast();
                     obj.Show();
+                    break;
+                case 6:
+                    obj. AddElement(56);
+                    obj. AddElement(30);
+                    obj. AddElement(70);
+                    obj.Search(56);
                     break;
 
 
