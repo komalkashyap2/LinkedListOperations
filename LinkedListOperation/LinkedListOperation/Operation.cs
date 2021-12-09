@@ -113,6 +113,27 @@ namespace LinkedListOperation
             return this.head;
         }
 
+        //Delete Last element
+        public Node PopLast()
+        {
+            Node newNode = this.head;
+            if (this.head == null)
+            {
+                return null;
+            }
+            if (this.head.next == null)
+            {
+                this.head = null;
+                return null;
+            }
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            newNode.next = null;
+            return newNode;
+
+        }
 
         //Display the nodes
         public void Show()
