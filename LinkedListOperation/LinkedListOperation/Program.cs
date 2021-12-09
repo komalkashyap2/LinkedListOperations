@@ -10,36 +10,49 @@ namespace LinkedListOperation
       {
         static void Main(string[] args)
         {
-
-            //UseCase 1
+            Console.WriteLine("****WELCOME TO LINKED LIST OPERATIONS");
+            Console.WriteLine("**********1.Adding the elements************");
+            Console.WriteLine("**********2.Inserted into list(First)************");
+            Console.WriteLine("**********3.Inserting in between***********");
+            Console.WriteLine("**********4.Pop the First Element***********");
+            Console.WriteLine("**********5.Pop the Last Element***********");
+            Console.WriteLine("**********6.Searching the Element***********");
+            Console.WriteLine("Enter the option!!!");
+            int num = Convert.ToInt32(Console.ReadLine());
+            //Creating object for Custom Linked list class
             Operation obj = new Operation();
-            
-            
-            //Display Operation
-            Console.WriteLine("*****Adding the Elements*****");
-            //Insertion Operation
-             obj.AddElement(56);
-             obj.AddElement(30);
-             obj.AddElement(70);
-             obj.AddFirst(56);
-             obj.AddFirst(30);
-             obj.AddFirst(70);
-             
-            //Display Operation
-            Console.WriteLine("*****Appending*****");
-             obj.Append(56);
-             obj.Append(30);
-             obj.Append(70);
+            switch (num)
+            {
+                case 1:
+                    obj. AddElement(56);
+                    obj. AddElement(30);
+                    obj. AddElement(70);
+                    obj. Show();
+                    break;
+                case 2:
+                    obj. AddElement(56);
+                    obj. AddElement(30);
+                    obj. AddElement(70);
+                    obj. Show();
+                    break;
+                case 3:
+                    obj. AddElement(56);
+                    obj. AddElement(70);
+                    obj. AddBetween(2, 30);
+                    obj. Show();
+                    break;
+                case 4:
+                    obj. AddElement(56);
+                    obj. AddElement(30);
+                    obj. AddElement(70);
+                    obj. pop();
+                    obj. Show();
+                    break;
 
-            //Insertion Operation
-             obj.AddElement(56);
-             obj.AddBetween(2, 30);
-             obj.AddElement(70);
 
-            //Display Operation
-            obj.Show();
+            }
+            Console.ReadLine();
 
-            ;
         }
       }
 }

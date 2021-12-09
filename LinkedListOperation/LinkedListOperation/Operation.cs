@@ -100,6 +100,17 @@ namespace LinkedListOperation
 
             }
         }
+        //Deleting first element
+        //Deleting the first node
+        public Node pop()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+        }
 
         //Display the nodes
         public void Show()
