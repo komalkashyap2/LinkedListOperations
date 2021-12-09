@@ -18,13 +18,21 @@ namespace LinkedListOperation
             //Display Operation
             Console.WriteLine("*****Adding the Elements*****");
             //Insertion Operation
-            obj.AddElement(56);
-            obj.AddElement(30);
-            obj.AddElement(70);
-            obj.AddFirst(56);
-            obj.AddFirst(30);
-            obj.AddFirst(70);
+             obj.AddElement(56);
+             obj.AddElement(30);
+             obj.AddElement(70);
+             obj.AddFirst(56);
+             obj.AddFirst(30);
+             obj.AddFirst(70);
+             
+            //Display Operation
+            Console.WriteLine("*****Appending*****");
+             obj.Append(56);
+             obj.Append(30);
+             obj.Append(70);
             obj.Show();
+
+            ;
         }
       }
 }
