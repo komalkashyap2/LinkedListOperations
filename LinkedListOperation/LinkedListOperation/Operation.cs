@@ -25,7 +25,14 @@ namespace LinkedListOperation
             }
             Console.WriteLine("Added into list " + new_node.data);
         }
-        
+        //Insert Front 
+        public void AddFirst(int new_data)
+        {
+            Node new_node = new Node(new_data);
+            new_node.next = this.head;
+            this.head = new_node;
+            Console.WriteLine("Added the list in first " + new_node.data);
+        }
         public Node GetLastNode()
         {
             Node temp = this.head;
@@ -39,6 +46,7 @@ namespace LinkedListOperation
         public void Show()
         {
             Console.WriteLine("**********Showing the Nodes************");
+            Console.WriteLine("/n");
             Node temp = this.head;
             if (temp == null)
             {

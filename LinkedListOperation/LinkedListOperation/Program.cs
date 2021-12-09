@@ -21,6 +21,9 @@ namespace LinkedListOperation
             obj.AddElement(56);
             obj.AddElement(30);
             obj.AddElement(70);
+            obj.AddFirst(56);
+            obj.AddFirst(30);
+            obj.AddFirst(70);
             obj.Show();
         }
       }
