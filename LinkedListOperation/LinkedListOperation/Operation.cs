@@ -162,6 +162,44 @@ namespace LinkedListOperation
             return (newNode.data);
 
         }
+        //search and delete
+        public int DeleteInBetween(int data)
+        {
+            Node temp = Search(data);
+            Console.WriteLine("Data {0} has been deleted from linked list", temp.data);
+            temp.next = temp.next.next;
+            int sizeofList = Size();
+            return sizeofList;
+        }
+        public int Size()
+        {
+            int count = 0;
+            Node temp = this.head;
+            while (temp != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+            return count;
+        }
+        //sorting
+        public void Sort()
+        {
+            Node i, j;
+            int temp;
+            for (i = this.head; i.next != null; i = i.next)
+            {
+                for (j = i.next; j != null; j = j.next)
+                {
+                    if (i.data > j.data)
+                    {
+                        temp = i.data;
+                        i.data = j.data;
+                        j.data = temp;
+                    }
+                }
+            }
+        }
 
 
         //Display the nodes

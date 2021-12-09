@@ -61,12 +61,29 @@ namespace LinkedListOperation
                     obj.AddElement(30);
                     obj.AddElement(70);
                     obj.Search(56);
+                    obj.Show();
                     break;
                 case 7:
                     obj.AddElement(56);
                     obj.AddElement(30);
                     obj.AddElement(70);
                     obj.Insert(30, 40);
+                    obj.Show();
+                    break;
+                case 8:
+                    obj.AddElement(56);
+                    obj.AddElement(30);
+                    obj.AddElement(40);
+                    obj.AddElement(70);
+                    obj.DeleteInBetween(40);
+                    obj.Show();
+                    break;
+                 case 9:
+                    obj.AddElement(56);
+                    obj.AddElement(30);
+                    obj.AddElement(40);
+                    obj.AddElement(70);
+                    obj.Sort();
                     obj.Show();
                     break;
 
